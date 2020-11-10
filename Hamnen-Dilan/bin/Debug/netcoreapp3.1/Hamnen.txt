@@ -1,0 +1,78 @@
+Dagens dag 2
+
+Båtar som anländer idag:
+
+Motorbåt med nummer Id: M-SHZ
+Motorbåt med nummer Id: M-BLZ
+RoddBåt  med nummer Id: R-NSZ
+Lastfartyg med nummer Id: L-RAV
+Lastfartyg med nummer Id: L-IPX
+Plats	Båttyp		Nummer	Vikt	Maxhastighet		Unik
+
+1.	Motorbåt	M-BRB	318	46 km/h		Antal hästkrafter: 106 
+2.	Motorbåt	M-OUW	742	98 km/h		Antal hästkrafter: 539 
+3.	Motorbåt	M-GTL	718	4 km/h		Antal hästkrafter: 336 
+4.	RoddBåt 	R-VCK	226	6 km/h		Maximal antal passangerare: 3 
+4,5-5,5.	SegelBåt	S-JNR	974	7 km/h		Båtens längd: 60  
+6,5.	Motorbåt	M-SHZ	2550	107 km/h		Antal hästkrafter: 455 
+7,5.	Motorbåt	M-BLZ	2432	20 km/h		Antal hästkrafter: 327 
+8,5.	RoddBåt 	R-NSZ	129	2 km/h		Maximal antal passangerare: 6 
+9-12.	Lastfartyg	L-RAV	6545	31 km/h		Containers totalt på fartyget: 479 
+13-16.	Lastfartyg	L-IPX	17129	0 km/h		Containers totalt på fartyget: 133 
+17. Tom Plats
+18. Tom Plats
+19. Tom Plats
+20. Tom Plats
+21. Tom Plats
+22. Tom Plats
+23. Tom Plats
+24. Tom Plats
+25. Tom Plats
+26. Tom Plats
+27. Tom Plats
+28. Tom Plats
+29. Tom Plats
+30. Tom Plats
+31. Tom Plats
+32. Tom Plats
+33. Tom Plats
+34. Tom Plats
+35. Tom Plats
+36. Tom Plats
+37. Tom Plats
+38. Tom Plats
+39. Tom Plats
+40. Tom Plats
+41. Tom Plats
+42. Tom Plats
+43. Tom Plats
+44. Tom Plats
+45. Tom Plats
+46. Tom Plats
+47. Tom Plats
+48. Tom Plats
+49. Tom Plats
+50. Tom Plats
+51. Tom Plats
+52. Tom Plats
+53. Tom Plats
+54. Tom Plats
+55. Tom Plats
+56. Tom Plats
+57. Tom Plats
+58. Tom Plats
+59. Tom Plats
+60. Tom Plats
+61. Tom Plats
+62. Tom Plats
+63. Tom Plats
+64. Tom Plats
+Båten som lämnar hamnen: R-VCK
+Antalet av roddbåtar: 1
+Antalet av motorbåtar: 5
+Antalet av segelbåtar: 1
+Antalet av lastfartyg: 2
+Medelhastigheten är: 38,6 km / h
+Total vikt är: 31311 kg
+
+Båtar som inte får någon plats:
