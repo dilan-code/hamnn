@@ -228,7 +228,7 @@ namespace Hamnen_Dilan
                                 Console.WriteLine($"Båten som lämnar hamnen: {item.IdNummer}");
                                 sw.WriteLine($"Båten som lämnar hamnen: {item.IdNummer}");
 
-                                //   ledigaPlatser += item.Tarplatser;
+                                //   BokadeHamnPlatser += item.PlatserSomTas;
                                 vikt -= item.Vikt;
                                 maxhastighet -= item.MaxSpeed;
                                 TotalHastighet--;
