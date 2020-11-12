@@ -5,7 +5,7 @@ using System.Text;
 namespace Hamnen_Dilan
 {
 
-    class Roddbåt : Båt //Klass Roddbåt
+    class Roddbåt : Boat //Klass Roddbåt
     {
         public int MaxPassenger { get; set; }
 
