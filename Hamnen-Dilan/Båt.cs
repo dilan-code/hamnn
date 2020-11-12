@@ -1,19 +1,20 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Hamnen_Dilan
 {
-    class Båt
+    class Boat
     {
         public string BåtTyp { get; set; }
         public string IdNummer { get; set; }
-        public int Vikt { get; set; }
+        public double Vikt { get; set; }
         public double MaxSpeed { get; set; }
         public string UnikEgenskap { get; set; }
         public int AntalDygnIHamnen { get; set; }
         public double PlatserSomTas { get; set; }
         public string NuvarandePlatsID { get; set; }
+        
 
 
 
@@ -67,4 +68,6 @@ namespace Hamnen_Dilan
     }
 
 }
+
+
 
