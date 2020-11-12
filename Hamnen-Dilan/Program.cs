@@ -1,5 +1,6 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 
@@ -9,21 +10,23 @@ namespace Hamnen_Dilan
     {
         static void Main(string[] args)
         {
+
             int dag = 1;
             double TotalaPlatser = 64;
             double BokadeHamnPlatser = 0;
 
 
-            //SKapar hamn och båtplatser
+
+            //Skapar hamn och båtplatser
 
             Hamn hamn = new Hamn();
             hamn.Båtplatser = new List<Slot>();
 
-            //Lista för båtskapande, båtar som ska inkomma, båtar som inte har någon plats och för bokade platser
-            List<Båt> båtarSkapade = new List<Båt>();
-            List<Båt> båtarPåväg = new List<Båt>();
-            List<Båt> BåtarUtanHamnPlats = new List<Båt>();
-            List<Hamn> bokade = new List<Hamn>();
+            //Lista för båtskapande, båtar som ska inkomma, båtar som inte har någon plats
+            List<Boat> båtarSkapade = new List<Boat>();
+            List<Boat> båtarPåväg = new List<Boat>();
+            List<Boat> BåtarUtanHamnPlats = new List<Boat>();
+            
 
             //Random båtar som inkommer varje dag
             Random rnd = new Random();
@@ -34,7 +37,7 @@ namespace Hamnen_Dilan
 
             while (true)
             {
-                string fileName = @"C:\Users\Dilan\source\repos\Hamnen-Dilan\Hamnen-Dilan\bin\Debug\netcoreapp3.1\hamnen.txt"; 
+                string fileName = @"C:\Users\Dilan\source\repos\Hamnen-Dilan\Hamnen-Dilan\bin\Debug\netcoreapp3.1\hamnen.txt";
                 using (StreamWriter sw = new StreamWriter(fileName, true))
                 {
                     Console.WriteLine($"Dagens dag {dag}\n");
@@ -47,6 +50,12 @@ namespace Hamnen_Dilan
                         {
                             Roddbåt roddbåtar = new Roddbåt();
                             båtarSkapade.Add(roddbåtar);
+                            {
+                                if (roddbåtar.PlatserSomTas == 0.5)
+                                {
+                                    båtarSkapade.Add(roddbåtar);
+                                }
+                            }
                         }
                         else if (randomNum == 2)
                         {
@@ -67,7 +76,9 @@ namespace Hamnen_Dilan
 
                     foreach (var item in båtarSkapade)
                     {
-                        //   Console.WriteLine($"Boat {item.IdentityNumber} of type {item.BoatType} has arrived");
+                        Console.WriteLine($"Båt {item.IdNummer} typ {item.BåtTyp} har anlänt");
+                        sw.WriteLine($"Båt {item.IdNummer} typ {item.BåtTyp} har anlänt");
+
 
 
 
@@ -97,8 +108,7 @@ namespace Hamnen_Dilan
                     foreach (var item in båtarSkapade)
                     {
 
-                        Console.WriteLine($"{item.BåtTyp} med nummer Id: {item.IdNummer}");
-                        sw.WriteLine($"{item.BåtTyp} med nummer Id: {item.IdNummer}");
+                        
 
                     }
                     Console.WriteLine();
@@ -111,6 +121,8 @@ namespace Hamnen_Dilan
                         foreach (var i in båtarPåväg)
                         {
                             if (i.PlatserSomTas == i.PlatserSomTas) ;
+
+
                         }
                     }
 
@@ -121,13 +133,13 @@ namespace Hamnen_Dilan
                     int antalLastfartyg = 0;
                     double maxhastighet = 0;
                     int TotalHastighet = 0;
-                    int vikt = 0;
+                    double vikt = 0;
 
                     Console.WriteLine("Plats\tBåttyp\t\tNummer\tVikt\tMaxhastighet\t\tUnik\n");
                     sw.WriteLine("Plats\tBåttyp\t\tNummer\tVikt\tMaxhastighet\t\tUnik\n");
 
 
-                    foreach (Båt item in båtarPåväg.ToList())
+                    foreach (Boat item in båtarPåväg.ToList())
                     {
 
 
