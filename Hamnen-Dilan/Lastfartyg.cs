@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Hamnen_Dilan
 {
-    class Lastfartyg : Båt //Klass Lastfartyg
+    class Lastfartyg : Boat //Klass Lastfartyg
     {
         public int Containers { get; set; }
 
