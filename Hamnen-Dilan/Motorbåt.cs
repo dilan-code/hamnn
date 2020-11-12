@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Hamnen_Dilan
 {
 
-    class Motorbåt : Båt  //Klass motorbåt
+    class Motorbåt : Boat  //Klass motorbåt
     {
         public int Hästkrafter { get; set; }
 
